@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <title>Digital Combat Simulator || DCS</title> 
+    <link rel="shortcut icon" href="imagens/favicon.ico">
+</head>
+<body >
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sucesso!!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                <div class="alert alert-success" role="alert">
+                    Cadastro realizado com Sucesso!!!
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark " style="height: fit-content; z-index: 999;">
+        <nav class="navbar col-11 m-auto bg-dark ">
+            <a class="navbar-brand">
+                <img src="imagens/LogoDCS.png" width="100" height="100" class="d-inline-block align-top" alt="">
+            </a>
+            <a class="navbar-text">
+                <h1 class="text-warning font-weight-normal text-uppercase font-weight-bold">Digital Combat Simulator</h1> 
+            </a>
+            <form class="form-inline">
+
+                <a type="button" class="btn btn-warning text-uppercase font-weight-bold mr-3 " href="https://store.steampowered.com/app/223750/DCS_World_Steam_Edition/">Download</a>
+
+                <div class="dropdown dropleft ">
+                    <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown"  data-target="#modal" aria-haspopup="true" aria-expanded="false">
+                    Cadastre-se
+                    </button>
+                    <div class="dropdown-menu p-3">
+                        <form class="dropdown-menu" >
+                            <div class="form-group">
+                                <label for="exampleDropdownName">Nome</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormName" placeholder="ex: João">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleDropdownFormEmail2">Endereço de email</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleDropdownFormPassword2">Senha</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Senha">
+                            </div>
+                            <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                            <label class="form-check-label" for="dropdownCheck2">
+                                Lembrar de mim
+                            </label>
+                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                                Cadrastrar
+                            </button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </nav>
+      </div>
+
+      <img src="imagens/15anos.png" width="100%" height="200">
+    
+      <div class="container-fluid bg-dark ">
+        <nav class="navbar navbar-expand-lg text-white col-11 m-auto">
+                <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto col-6">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item" >
+                            <a class="nav-link text-white  font-weight-normal index-page" href="">Home <span class="sr-only">(página atual)</span></a>
+                            </li>
+                            <li class="nav-item" >
+                                <a class="nav-link text-white  font-weight-normal mais-page" href="">Mais</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white  font-weight-normal " href="https://store.steampowered.com/app/223750/DCS_World_Steam_Edition/">Download</a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 col-4">
+                        <input class="form-control mr-sm-2 col-7" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn btn-warning my-2 my-sm-0  font-weight-bold" type="submit">Pesquisar</button>
+                    </form> 
+                </div>   
+            </nav> 
+        </div>
+      
+        <div class="container-fluid  pb-5 pt-5" style="background-color: darkgray;">
+
+            <div class="container">
+                <h2 class="text-center  font-weight-bold pb-5 " style="font-family: HelveticaBold; color: black;" > Um pouco do Jogo</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wMzPaCCMhb8?si=Ru5HhlSL5fuwKCw9" allowfullscreen></iframe>              
+                </div>
+        </div>
+
+    </body>
+</html>
